@@ -21,6 +21,7 @@ class Pet:
         self.happiness = min(10, self.happiness + 1)
         self.gain_xp(1)
         print(f"{self.name} enjoyed some {food}!")
+        
     def sleep(self):
         if self.energy < 10:
             self.energy = min(10, self.energy + 3)
@@ -29,12 +30,25 @@ class Pet:
         else:
             print(f"{self.name} is not tired enough to sleep.")
 
-    def play(self):
-        if 
+        def play(self):
+        if self.energy >= 2:
+            self.energy -= 2
+            self.hunger = min(10, self.hunger + 1)
+            self.happiness = min(10, self.happiness + 2)
+            self.gain_xp(2)
+            print(f"{self.name} had a blast playing! 🎾")
         else:
-            
+            print(f"{self.name} is too tired to play. 😓")
 
     def train(self, trick):
+        if self.energy >= 1:
+            self.tricks.append(trick)
+            self.happiness = min(10, self.happiness + 2)
+            self.energy = max(0, self.energy - 1)
+            self.gain_xp(3)
+            print(f"{self.name} learned a new trick: {trick}! 🐾")
+        else:
+            print(f"{self.name} is too tired to learn new tricks.")
         
 
     def show_tricks(self):
