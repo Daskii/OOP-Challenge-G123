@@ -14,14 +14,15 @@ class Pet:
         self.level = 1
         self.experience = 0
 
-    def eat(self):
+   def eat(self, food=None):
+    if not food:
         food = random.choice(["Dog Food", "Cat Food", "Fish Flakes", "Bird Seeds"])
-        self.hunger = min(10, self.hunger + 3)
-        self.energy = min(10, self.energy - 1)
-        self.happiness = min(10, self.happiness + 1)
-        self.gain_xp(1)
-        print(f"{self.name} enjoyed some {food}!")
-        
+    self.hunger = min(10, self.hunger + 3)
+    self.energy = max(0, self.energy - 1)
+    self.happiness = min(10, self.happiness + 1)
+    self.gain_xp(1)
+    print(f"{self.name} enjoyed some {food}! 🍽️")
+       
     def sleep(self):
         if self.energy < 10:
             self.energy = min(10, self.energy + 3)
