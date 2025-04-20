@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Goldie",
+    "pet_type": "Fish",
+    "age": 2,
+    "hunger": 7,
+    "energy": 5,
+    "happiness": 9,
+    "health": 10,
+    "tricks": [
+      "Swim through hoop"
+    ],
+    "level": 2,
+    "experience": 4
+  },
+  {
+    "name": "Ember",
+    "pet_type": "Dragon",
+    "age": 5,
+    "hunger": 3,
+    "energy": 8,
+    "happiness": 10,
+    "health": 9,
+    "tricks": [
+      "Fly",
+      "Breathe Fire"
+    ],
+    "level": 4,
+    "experience": 7
+  },
+  {
+    "name": "Milo",
+    "pet_type": "Cat",
+    "age": 3,
+    "hunger": 5,
+    "energy": 5,
+    "happiness": 6,
+    "health": 10,
+    "tricks": [
+      "Jump",
+      "Scratch"
+    ],
+    "level": 2,
+    "experience": 5
+  },
+  {
+    "name": "Tory",
+    "pet_type": "Cow",
+    "age": 8,
+    "hunger": 10,
+    "energy": 4,
+    "happiness": 9,
+    "health": 7,
+    "tricks": [
+      "Football",
+      "Music"
+    ],
+    "level": 2,
+    "experience": 4
+  }
+]
